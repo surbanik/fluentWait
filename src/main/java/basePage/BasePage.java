@@ -27,7 +27,7 @@ public class BasePage {
         random = new Random();
         wait = new FluentWait<>(driver);
         wait.withTimeout(Duration.ofSeconds(20));
-        wait.pollingEvery(Duration.ofSeconds(1));
+        wait.pollingEvery(Duration.ofMillis(500));
         wait.ignoring(NoSuchElementException.class);
         PageFactory.initElements(driver, this);
     }
