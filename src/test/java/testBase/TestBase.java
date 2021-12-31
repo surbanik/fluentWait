@@ -36,7 +36,6 @@ public class TestBase {
     @BeforeEach
     void setUp() {
         driver = driverFactory.getDriver(loader.getBrowser());
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         logger.info("Webdriver window start");
     }
 

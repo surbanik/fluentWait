@@ -53,10 +53,10 @@ public class TestPage extends BasePage {
     @FindBy(css = "[name='password']")
     WebElement passwordInput;
 
-    @FindBy(css = "[name='customer_privacy']")
+    @FindBy(css = "#customer-form div:nth-child(9) div:nth-child(2)>span") //span zamiast input - ani visibly of element ani clickable
     WebElement customerPrivacyCheckbox;
 
-    @FindBy(css = "[name='psgdpr']")
+    @FindBy(css = "#customer-form div:nth-child(11) div:nth-child(2)>span") //span zamiast input- ani visibly of element ani clickable
     WebElement policyCheckbox;
 
     @FindBy(css = "[data-link-action='register-new-customer']")
@@ -65,10 +65,10 @@ public class TestPage extends BasePage {
     @FindBy(css = ".form-footer .continue")
     WebElement personalInfoContinueButton;
 
-    @FindBy(id = "payment-option-2")
+    @FindBy(css = "#payment-option-2-container>span") //span zamiast input- ani visibly of element ani clickable
     WebElement payByBankWireInput;
 
-    @FindBy(id = "conditions_to_approve[terms-and-conditions]")
+    @FindBy(css = "#conditions-to-approve span:nth-child(1)")//span zamiast input- ani visibly of element ani clickable
     WebElement termsAndConditionsCheckbox;
 
     @FindBy(css = ".ps-shown-by-js>[type='submit']")
