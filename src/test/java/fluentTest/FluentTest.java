@@ -1,4 +1,4 @@
-package implicitTest;
+package fluentTest;
 
 import models.Product;
 import models.User;
@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class ImplicitTest extends TestBase {
+public class FluentTest extends TestBase {
 
     @RepeatedTest(30)
-    public void implilcitTest() {
+    public void fluentTest() {
         User user = new UserFactory().getRandomUser();
         TestPage testPage = new TestPage(driver);
         Product product = new Product();
